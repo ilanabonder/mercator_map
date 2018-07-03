@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <title>Interactive Map</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.5.0/d3.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <div id="container">
+      <div id="text">
+        <div class="text_container">
+        <h1 class="title">How can we visualize real distance in the Mercator projection? </h1>
+        <p class="subtitle">All maps are distorted. But how much? <br>
+        Mouseover the map to see how the size of a 500 miles radius circle changes according to the distortion of the Mercator projection.</p><br>
+        <img class="realimg" src="realrealsize.png" alt="the real size">
+        <br><br>
+          <p class="alltext">A map projection is a systematic transformation of the latitudes and longitudes of locations from the surface of a sphere or an ellipsoid into locations on a plane. As all map projections necessarily distort the surface of the world in some fashion, the cartographer's decision on *what* and *how* to design it are based in a desired functionality and immersed in a specific geopolitical context.
+          <br><br>
+        The Mercator projection is the most used projection today. It was created by the Flemish geographer and cartographer Gerardus Mercator in 1569. It became the standard map projection for european nautical purposes. Although the linear scale is equal in all directions around any point, the projection distorts the size of objects as the latitude increases from the Equator to the poles, where the scale becomes infinite.
+            <br><br>
+        In 1871, looking to characterize local distortions due to map projection, French mathematician Nicolas Auguste Tissot developed the Tissot's indicatrix. It consists in a mathematical contrivance to describe the distortion of a map at a single point.
+
+        Inspired by Tissot's idea I created this interactive map in order to visualize real distances (in this case a radius of 500 miles) in the Mercator projection. With that, we can easily analyze its distortions.
+        <br><br>Just mouseover the map and try it yourself!
+        </p><br><br>
+        <p class="signature"> created by Ilana Bonder<br>
+          <a href="www.ilanabonder.com">www.ilanabonder.com</a></p>
+        </div>
+      </div>
+      <div id="map-holder"></div>
+
+    <script src="main.js"></script>
+  </div>
+  </body>
+</html>
